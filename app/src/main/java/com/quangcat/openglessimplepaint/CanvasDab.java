@@ -1,4 +1,4 @@
-package com.quangcat.myapplication;
+package com.quangcat.openglessimplepaint;
 
 /**
  * Represents a single paint dab on the canvas.  Used for queueing draw events.

@@ -1,4 +1,4 @@
-package com.quangcat.myapplication;
+package com.quangcat.openglessimplepaint;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -42,8 +42,8 @@ public class CanvasShaderProgram {
         glLinkProgram(program);
         glGetProgramiv(program, GL_LINK_STATUS, linkStatus, 0);
         if (linkStatus[0] == 0) {
-            Log.e(PaintPaint.NAME, "ERROR LINKING");
-            Log.e(PaintPaint.NAME, glGetProgramInfoLog(program));
+            Log.e(Constants.NAME, "ERROR LINKING");
+            Log.e(Constants.NAME, glGetProgramInfoLog(program));
             glDeleteProgram(program);
             return;
         }

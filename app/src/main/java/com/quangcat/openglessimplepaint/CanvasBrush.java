@@ -1,4 +1,4 @@
-package com.quangcat.myapplication;
+package com.quangcat.openglessimplepaint;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -133,7 +133,7 @@ public class CanvasBrush {
 
             if (dab.isNewStroke()) {
                 /* A new stroke starts at the dab's current position...*/
-                Log.d(PaintPaint.NAME, "new stroke");
+                Log.d(Constants.NAME, "new stroke");
                 x = dab.getX();
                 y = dab.getY();
             } else {

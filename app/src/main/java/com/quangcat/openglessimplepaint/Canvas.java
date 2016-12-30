@@ -1,4 +1,4 @@
-package com.quangcat.myapplication;
+package com.quangcat.openglessimplepaint;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,7 +18,7 @@ import android.graphics.Bitmap.CompressFormat;
 import android.util.Log;
 
 /**
- * This class represents the drawing aspects of the CanvasActivity and serves to
+ * This class represents the drawing aspects of the MainActivity and serves to
  * keep the layout of the class and menus separate from the drawing function.
  *
  * Note: The entire Canvas design needs rethinking.  Is this class even
@@ -78,12 +78,12 @@ public class Canvas {
     public void save(String saveDir, String fileName) {
         /* Make sure we make a valid Bitmap */
         if (mRenderer == null) {
-            Log.e(PaintPaint.NAME, "Renderer is null!");
+            Log.e(Constants.NAME, "Renderer is null!");
             return;
         }
         Bitmap b = mRenderer.getCanvasBitmap();
         if (b == null) {
-            Log.e(PaintPaint.NAME, "Couldn't get bitmap to save!");
+            Log.e(Constants.NAME, "Couldn't get bitmap to save!");
             return; // return early if we didn't get a bitmap
         }
 

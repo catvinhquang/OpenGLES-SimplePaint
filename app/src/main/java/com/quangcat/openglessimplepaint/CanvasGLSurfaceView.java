@@ -1,4 +1,4 @@
-package com.quangcat.myapplication;
+package com.quangcat.openglessimplepaint;
 
 import android.app.Activity;
 

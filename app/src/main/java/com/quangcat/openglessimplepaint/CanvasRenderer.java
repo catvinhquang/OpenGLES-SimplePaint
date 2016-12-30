@@ -1,4 +1,4 @@
-package com.quangcat.myapplication;
+package com.quangcat.openglessimplepaint;
 
 import java.io.IOException;
 
@@ -146,7 +146,7 @@ public class CanvasRenderer implements GLSurfaceView.Renderer {
         try {
             brush.setMask(BitmapFactory.decodeStream(assets.open("brushes/round.png")));
         } catch (IOException e) {
-            Log.e(PaintPaint.NAME, "Failed to load brush mask.");
+            Log.e(Constants.NAME, "Failed to load brush mask.");
         }
         brush.setSize(settings.getFloat("BRUSH_SIZE", 1.0f));
         brush.setColor(settings.getInt("BRUSH_COLOR", 0x000000ff));
@@ -165,7 +165,7 @@ public class CanvasRenderer implements GLSurfaceView.Renderer {
         glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
 
         if (willClear) {
-            Log.d(PaintPaint.NAME, "Clearing Canvas");
+            Log.d(Constants.NAME, "Clearing Canvas");
             glClear(GL_COLOR_BUFFER_BIT);
             willClear = false;
         }
@@ -268,16 +268,16 @@ public class CanvasRenderer implements GLSurfaceView.Renderer {
 
         switch(glCheckFramebufferStatus(GL_FRAMEBUFFER)) {
         case GL_FRAMEBUFFER_COMPLETE:
-            Log.d(PaintPaint.NAME,"The fbo is complete");
+            Log.d(Constants.NAME,"The fbo is complete");
             break;
         case GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT:
-            Log.d(PaintPaint.NAME,"GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT");
+            Log.d(Constants.NAME,"GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT");
             break;
         case GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
-            Log.d(PaintPaint.NAME,"GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT");
+            Log.d(Constants.NAME,"GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT");
             break;   
         case GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS:
-            Log.d(PaintPaint.NAME,"GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS");
+            Log.d(Constants.NAME,"GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS");
             break;
         }
         
@@ -325,7 +325,7 @@ public class CanvasRenderer implements GLSurfaceView.Renderer {
             }
         }
 
-        Log.d(PaintPaint.NAME, "canAutosave = " + canAutosave);
+        Log.d(Constants.NAME, "canAutosave = " + canAutosave);
         Bitmap sb;
         if (canAutosave) {
             sb = Bitmap.createBitmap(bt, width, height, Bitmap.Config.RGB_565);
