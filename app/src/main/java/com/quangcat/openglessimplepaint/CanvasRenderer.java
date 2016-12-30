@@ -148,7 +148,7 @@ public class CanvasRenderer implements GLSurfaceView.Renderer {
         } catch (IOException e) {
             Log.e(Constants.NAME, "Failed to load brush mask.");
         }
-        brush.setSize(settings.getFloat("BRUSH_SIZE", 1.0f));
+        brush.setSize(settings.getFloat("BRUSH_SIZE", 100f));
         brush.setColor(settings.getInt("BRUSH_COLOR", 0x000000ff));
         brush.setDabSteps(settings.getInt("BRUSH_DABS", 45));
 
