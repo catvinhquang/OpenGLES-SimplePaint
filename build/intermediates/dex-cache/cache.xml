@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/quangcat/OpenGLES-SimplePaint/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="becbdc18459af38327dacb97069fb7156d835a63">
+        <dex dex="/home/quangcat/OpenGLES-SimplePaint/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5f2b3f9fe7dada44ed22c6089a83e846a6ed8da1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/quangcat/OpenGLES-SimplePaint/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d275ac23de990085c55a9d0d44f59a8d5ecbeb73">
+        <dex dex="/home/quangcat/OpenGLES-SimplePaint/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ee49a35fb6a681c2c61f0a6e4f717b8b261830dc/classes.dex" />
+    </item>
+
+</items>

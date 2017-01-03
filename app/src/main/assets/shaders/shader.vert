@@ -1,7 +1,7 @@
+precision highp float;
 uniform mat4 uProjMatrix;
 uniform float uZoom;
 uniform vec2 uOffset;
-
 attribute vec2 aTextureCoord;
 attribute vec4 aVertexPosition;
 varying vec2 vTextureCoord;

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">OpenGLES Simple Paint</string>
-	<string name="canvasSaveMenuItem">Save</string>
 	<string name="canvasBrushMenuItem">Brush Settings</string>
 	<string name="canvasClearMenuItem">Clear Canvas</string>
 	<string name="brush_setting_size">Size</string>
